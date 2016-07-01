@@ -14,6 +14,4 @@ ADD     build/runit/cron /etc/service/cron/run
 
 # Remove useless cron entries.
 # Checks for lost+found and scans for mtab.
-#RUN     rm -f /etc/cron.daily/standard
-
-RUN     service syslog-ng start
+RUN     rm -f /etc/cron.daily/standard
